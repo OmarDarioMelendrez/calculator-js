@@ -129,8 +129,8 @@ input {
 	border-radius: 10px;
 	font-size: 35px;
 	display: grid;
-	grid-template-columns: 46px 46px 46px 46px;
-	grid-template-rows: 46px 46px 46px 46px;
+	grid-template-columns: 50px 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px 50px;
 	column-gap: 13px;
 	row-gap: 13px;
 	justify-content: center;
@@ -182,5 +182,21 @@ input {
 @media (min-width: 500px) {
 	.keypad {
 		grid-template-columns: 100px 100px 100px 100px;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+	.header {
+		padding: 5px 25px;
+	}
+	.screen {
+		padding: 6px;
+		font-size: 25px;
+	}
+	.keypad {
+		padding: 10px;
+		margin: 5px 25px;
+		grid-template-rows: 30px 30px 30px 30px;
+		row-gap: 5px;
 	}
 }

@@ -1,13 +1,11 @@
 class Calculator {
 	constructor(screenElement) {
-		this.operand = "";
-		this.operation = null;
+		this.operand = "0";
 		this.screen = screenElement;
 	}
 
 	reset() {
 		this.operand = "0";
-		this.operation = null;
 	}
 	del() {
 		if (this.operand.length > 1) {
@@ -31,7 +29,9 @@ class Calculator {
 	}
 
     calculate(){
+		if (this.operand === "0" || this.operand === "") return this.operand = "0"
         let [num1, operation, num2] = this.operand.split(" ");
+		if (!operation || !num2) return this.operand = `${num1}`
         num1 = parseFloat(num1);
         num2 = parseFloat(num2);
         const typeOperation = {
@@ -81,5 +81,4 @@ deleteButton.addEventListener("click", () => {
 equalButton.addEventListener("click", () => {
     calculadora.calculate();
     calculadora.updateDisplay();
-    calculadora.reset()
 })

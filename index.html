@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon.ico"
+		/>
+		<link rel="stylesheet" href="/stylesheets/main.css" />
+		<title>Calculator app</title>
+	</head>
+	<body>
+    <div id="main">
+	<!-- ----header----- -->
+      <div class="header">
+
+        <div class="header-title">calc</div>
+
+        <div class="theme-options">
+
+          <div class="slider-numbers">
+            <span class="slider-number">1</span>
+            <span class="slider-number">2</span>
+            <span class="slider-number">3</span>
+          </div>
+
+          <div class="slider-container">
+            <h4 class="theme-title">THEME</h4>
+            <input type="range" name="slider" min="1" max="3" value="1" id="slider" />
+          </div>
+
+        </div>
+
+      </div>
+	<!-- ----end-header----- -->
+
+	<!-- ----screen----- -->
+	  <div class="screen">
+			  <span id="operand">0</span>
+	  </div>
+	<!-- ----end-screen----- -->
+	<!-- ----keypad----- -->
+	<div class="keypad">
+		<button data-number class="key">7</button>
+		<button data-number class="key">8</button>
+		<button data-number class="key">9</button>
+		<button data-del class="key del">DEL</button>
+		<button data-number class="key">4</button>
+		<button data-number class="key">5</button>
+		<button data-number class="key">6</button>
+		<button data-operation class="key">+</button>
+		<button data-number class="key">1</button>
+		<button data-number class="key">2</button>
+		<button data-number class="key">3</button>
+		<button data-operation class="key">-</button>
+		<button data-number class="key">.</button>
+		<button data-number class="key">0</button>
+		<button data-operation class="key">/</button>
+		<button data-operation class="key">x</button>
+		<button data-reset class="key reset">RESET</button>
+		<button data-equal class="key equal">=</button>
+	</div>
+	<!-- ----end-keypad----- -->
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/calculator.js"></script>
+    
+	</body>
+</html>

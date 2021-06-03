@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ Github repository ](https://github.com/OmarDarioMelendrez/calculator-js)
+- Live Site URL: [  web ](https://calculator-js-omar-dario.netlify.app/)
 
 ## My process
 
@@ -103,7 +103,7 @@ In my next projects I go to implement my knowledge in Node.js too, to make a sit
 
 ## Author
 
-- Website - [Omar Dario Melendrez (https://omardario.online)
+- Website : [Omar Dario Melendrez](https://omardario.online)
 
 
 

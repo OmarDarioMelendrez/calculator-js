@@ -185,7 +185,7 @@ input {
 	}
 }
 
-@media (orientation: landscape) and (max-width: 800px) {
+@media (orientation: landscape) and (max-width: 600px) {
 	.header {
 		padding: 5px 25px;
 	}
